@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Dojo Survey Index</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Dojo Survey</h2>
+      <form action="/result" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="location">Dojo Location:</label>
+          <select class="form-control" id="location" name="location">
+            <option>San Jose</option>
+            <option>Seattle</option>
+            <option>Dallas</option>
+            <option>Chicago</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="language">Favorite Language:</label>
+          <select class="form-control" id="language" name="language">
+            <option>Python</option>
+            <option>JavaScript</option>
+            <option>Java</option>
+            <option>C#</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment (optional):</label>
+          <textarea
+            class="form-control"
+            id="comment"
+            name="comment"
+            rows="3"
+          ></textarea>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
